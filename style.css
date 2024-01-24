@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+:root {
+  --primary-color: hsl(278, 68%, 11%);
+  --background-color: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background-color);
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--primary-color);
+}
+
+#form form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+form label {
+  margin-top: 10px;
+}
+
+#formBottom {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#formBottom div {
+  width: 50%;
+}
+
+#form #expDate input {
+  width: 48%;
+  margin-top: .5rem;
+}
+
+#form #cvcNumber input {
+  width: 100%;
+  margin-top: .5rem;
+}
+
+#form div label {
+  display: block;
+}
+
+input, button {
+  height: 3rem;
+  border-radius: 0.7em;
+}
+
+button {
+  font-size: 1rem;
+  margin-top: 25px;
+}
+
+input::placeholder {
+  font-size: 1.1rem;
+  font-family: "Space Grotesk", sans-serif;
+  color: hsl(270, 3%, 87%);
+}
+
+#bg {
+  grid-column: 1 / 2;
+  background-image: url(/images/bg-main-desktop.png);
+  background-size: cover;
+}
+
+#form {
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 50px 50px 200px;
+}
+
+#form form {
+  width: 50%;
+}
+
+#form form input {
+  border: 1px solid hsl(270, 3%, 87%);
+  padding-left: 1rem;
+}
+
+#form form button {
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--background-color);
+}
+
+#cards {
+  position: absolute;
+  top: 10%;
+  margin: auto 0 auto 10%;
+}
+
+#frontCard {
+  height: 245px;
+  width: 447px;
+  background-image: url(/images/bg-card-front.png);
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 25px;
+  color: var(--background-color);
+}
+
+#topInfo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#topInfo span {
+  display: block;
+  border-radius: 50px;
+}
+
+#topInfo #bigCircle {
+  height: 50px;
+  width: 50px;
+  background: var(--background-color);
+}
+
+#topInfo #smallCircle {
+  height: 25px;
+  width: 25px;
+  border: 1px solid var(--background-color);
+}
+
+#cardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+
+#cardInfo #cardNumber {
+  font-size: 2.2rem;
+}
+
+#cardNameExp {
+  display: flex;
+  justify-content: space-between;
+}
+
+#backCard {
+  height: 245px;
+  width: 447px;
+  margin-left: 15%;
+  background-image: url(/images/bg-card-back.png);
+}
+
+#cardCVC {
+  position: absolute;
+  right: -15px;
+  bottom: 115px;
+  color: var(--background-color);
+}
