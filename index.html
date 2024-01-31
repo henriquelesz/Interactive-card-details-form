@@ -22,6 +22,7 @@
           type="text"
           id="cardNameInput"
           placeholder="e.g. Jane Appleseed"
+          maxlength="32"
           required
         />
         <label for="cardNumberInput">CARD NUMBER</label>
@@ -29,6 +30,7 @@
           type="number"
           id="cardNumberInput"
           placeholder="e.g. 1234 5678 9123 0000"
+          maxlength="16"
           required
         />
         <div id="formBottom">
@@ -39,6 +41,7 @@
               id="expMonthInput"
               min="01"
               max="12"
+              maxlength="2"
               placeholder="MM"
               required
             />
@@ -47,6 +50,7 @@
               id="expYearInput"
               min="24"
               max="99"
+              maxlength="2"
               placeholder="YY"
               required
             />
@@ -54,10 +58,11 @@
           <div id="cvcNumber">
             <label for="cvcNumberInput">CVC</label>
             <input
-              type="number"
+              type="text"
               id="cvcNumberInput"
               min="001"
               max="999"
+              maxlength="3"
               placeholder="e.g. 123"
               required
             />

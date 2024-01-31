@@ -67,6 +67,7 @@ input, button {
 button {
   font-size: 1rem;
   margin-top: 25px;
+  cursor: pointer;
 }
 
 input::placeholder {
@@ -172,4 +173,10 @@ input::placeholder {
   right: -15px;
   bottom: 115px;
   color: var(--background-color);
+}
+
+@media (max-width: 375px) {
+  #form {
+    background: red;
+  }
 }
