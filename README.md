@@ -85,6 +85,8 @@ Remember, if you're looking for feedback on your solution, be sure to ask questi
 
 ## Sharing your solution
 
+https://henriquelesz.github.io/Interactive-card-details-form/
+
 There are multiple places you can share your solution:
 
 1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
