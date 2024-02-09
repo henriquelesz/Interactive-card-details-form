@@ -78,7 +78,7 @@ input::placeholder {
 
 #bg {
   grid-column: 1 / 2;
-  background-image: url(./images/bg-main-desktop.png);
+  background-image: url(../images/bg-main-desktop.png);
   background-size: cover;
 }
 
@@ -114,7 +114,7 @@ input::placeholder {
 #frontCard {
   height: 245px;
   width: 447px;
-  background-image: url(./images/bg-card-front.png);
+  background-image: url(../images/bg-card-front.png);
   margin-bottom: 25px;
   display: flex;
   flex-direction: column;
@@ -165,7 +165,7 @@ input::placeholder {
   height: 245px;
   width: 447px;
   margin-left: 15%;
-  background-image: url(./images/bg-card-back.png);
+  background-image: url(../images/bg-card-back.png);
 }
 
 #cardCVC {
